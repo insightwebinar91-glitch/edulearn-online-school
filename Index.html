@@ -1,0 +1,282 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="EduLearn is a modern online learning platform offering practical courses to help students build new skills.">
+  <title>EduLearn | Learn Without Limits</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="header">
+    <nav class="navbar container">
+      <a href="#home" class="logo">Edu<span>Learn</span></a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">
+        ☰
+      </button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#courses">Courses</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#register" class="nav-button">Join Now</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero-content">
+        <div class="hero-text">
+          <span class="eyebrow">WELCOME TO EDULEARN</span>
+          <h1>Learn New Skills.<br><span>Build Your Future.</span></h1>
+          <p>
+            Discover practical courses, develop your knowledge and take
+            the next step towards your educational goals.
+          </p>
+          <div class="hero-actions">
+            <a href="#courses" class="btn btn-primary">Explore Courses</a>
+            <a href="#about" class="btn btn-outline">Learn More</a>
+          </div>
+          <div class="hero-note">
+            <span>✓ Flexible learning</span>
+            <span>✓ Beginner friendly</span>
+          </div>
+        </div>
+
+        <div class="hero-image">
+          <img
+            src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1000&q=85"
+            alt="Students learning together"
+          >
+          <div class="image-label">
+            <strong>Keep Learning</strong>
+            <span>Knowledge opens doors</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="stats-section">
+      <div class="container stats-grid">
+        <div class="stat">
+          <h2>12+</h2>
+          <p>Sample Courses</p>
+        </div>
+        <div class="stat">
+          <h2>100%</h2>
+          <p>Learning Focus</p>
+        </div>
+        <div class="stat">
+          <h2>24/7</h2>
+          <p>Explore Anytime</p>
+        </div>
+        <div class="stat">
+          <h2>4</h2>
+          <p>Learning Categories</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section courses-section" id="courses">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">OUR LEARNING PROGRAMS</span>
+          <h2>Explore Our Courses</h2>
+          <p>Find a subject that interests you and start exploring.</p>
+        </div>
+
+        <div class="course-controls">
+          <input
+            type="search"
+            id="courseSearch"
+            placeholder="Search courses..."
+            aria-label="Search courses"
+          >
+
+          <div class="filter-buttons" id="filterButtons">
+            <button class="filter-btn active" data-category="all">All</button>
+            <button class="filter-btn" data-category="technology">Technology</button>
+            <button class="filter-btn" data-category="business">Business</button>
+            <button class="filter-btn" data-category="design">Design</button>
+            <button class="filter-btn" data-category="personal">Personal Growth</button>
+          </div>
+        </div>
+
+        <div class="course-grid" id="courseGrid">
+          <!-- Course cards are created by JavaScript -->
+        </div>
+
+        <p class="no-results" id="noResults" hidden>
+          No courses found. Try another search.
+        </p>
+      </div>
+    </section>
+
+    <section class="section about-section" id="about">
+      <div class="container about-grid">
+        <div class="about-image">
+          <img
+            src="https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=1000&q=85"
+            alt="Students participating in a classroom lesson"
+            loading="lazy"
+          >
+        </div>
+
+        <div class="about-text">
+          <span class="eyebrow">ABOUT EDULEARN</span>
+          <h2>Education That Helps You Grow</h2>
+          <p>
+            EduLearn is a demonstration online learning platform designed
+            to make discovering educational opportunities simple and
+            convenient.
+          </p>
+          <p>
+            Explore different learning areas, choose subjects that interest
+            you and use learning as a tool for personal development.
+          </p>
+
+          <ul class="benefit-list">
+            <li>✓ Easy-to-explore course catalogue</li>
+            <li>✓ Simple course search and filtering</li>
+            <li>✓ Responsive design for mobile devices</li>
+            <li>✓ Convenient registration enquiry form</li>
+          </ul>
+
+          <a href="#register" class="btn btn-primary">Register Your Interest</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section benefits-section">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">WHY CHOOSE US</span>
+          <h2>A Better Way to Explore Learning</h2>
+          <p>Simple features designed around the learner.</p>
+        </div>
+
+        <div class="benefit-grid">
+          <article class="benefit-card">
+            <div class="benefit-icon">📚</div>
+            <h3>Variety of Subjects</h3>
+            <p>Explore learning topics from technology to business and design.</p>
+          </article>
+
+          <article class="benefit-card">
+            <div class="benefit-icon">📱</div>
+            <h3>Learn on Any Device</h3>
+            <p>Use the website on a phone, tablet, laptop or desktop computer.</p>
+          </article>
+
+          <article class="benefit-card">
+            <div class="benefit-icon">🎯</div>
+            <h3>Goal-Oriented</h3>
+            <p>Discover subjects that support your interests and learning goals.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section register-section" id="register">
+      <div class="container register-grid">
+        <div class="register-text">
+          <span class="eyebrow">TAKE THE NEXT STEP</span>
+          <h2>Interested in Learning With Us?</h2>
+          <p>
+            Complete the enquiry form and your email application will open
+            with your details ready to send.
+          </p>
+          <p class="small-note">
+            This is a demonstration form. It does not create an account or
+            automatically submit information.
+          </p>
+        </div>
+
+        <form class="register-form" id="registrationForm">
+          <h3>Student Enquiry</h3>
+
+          <label for="studentName">Full Name</label>
+          <input
+            type="text"
+            id="studentName"
+            name="studentName"
+            placeholder="Enter your name"
+            required
+            maxlength="80"
+          >
+
+          <label for="studentEmail">Email Address</label>
+          <input
+            type="email"
+            id="studentEmail"
+            name="studentEmail"
+            placeholder="Enter your email"
+            required
+            maxlength="120"
+          >
+
+          <label for="studentCourse">Choose a Course</label>
+          <select id="studentCourse" name="studentCourse" required>
+            <option value="">Select a course</option>
+            <option>Web Development Basics</option>
+            <option>JavaScript for Beginners</option>
+            <option>Computer Networking</option>
+            <option>Digital Marketing</option>
+            <option>Business Management</option>
+            <option>Entrepreneurship</option>
+            <option>Graphic Design</option>
+            <option>UI/UX Design</option>
+            <option>Creative Thinking</option>
+            <option>Communication Skills</option>
+            <option>Time Management</option>
+            <option>Personal Development</option>
+          </select>
+
+          <label for="studentMessage">Message (Optional)</label>
+          <textarea
+            id="studentMessage"
+            name="studentMessage"
+            rows="4"
+            placeholder="What would you like to know?"
+            maxlength="500"
+          ></textarea>
+
+          <button type="submit" class="btn btn-primary form-button">
+            Send Enquiry
+          </button>
+
+          <p id="formMessage" class="form-message" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <div class="container contact-content">
+        <div>
+          <span class="eyebrow">GET IN TOUCH</span>
+          <h2>Have a Question?</h2>
+          <p>Contact us by email for more information about this demonstration platform.</p>
+        </div>
+        <a href="mailto:insightwebinar91@gmail.com" class="btn btn-light">
+          Email Us
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-content">
+      <a href="#home" class="logo footer-logo">Edu<span>Learn</span></a>
+      <p>© <span id="currentYear"></span> EduLearn. Demonstration project.</p>
+      <a href="#home" class="back-top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
